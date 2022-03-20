@@ -1,0 +1,9 @@
+{
+  "name": "jsl",
+  "version": "0.0.0",
+  "description": "JSL",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}
