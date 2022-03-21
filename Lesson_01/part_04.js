@@ -6,6 +6,7 @@
  * нельзя изменять и они должны инициализироваться во время объявления.
  * Область видимости констант ограничивается вмещаюбщим блоком или аналогично оператору let.
  * Повторное объявление var, let и const вызывает синтаксические ошибки.
+ *
  * Все материалы можно скачать из репозитория https://github.com/kudaa/JSL
  * 
  */
@@ -14,26 +15,26 @@
 var http = require('http');
 var port = process.env.PORT || 1337;
 
-function constDeclare() {
-	// ОК: Стандартное объявление константы
-	const age = 18;
+//function constDeclare() {
+//	// ОК: Стандартное объявление константы
+//	const age = 18;
 
-	// ERROR: Константу можно объявлять только присвоив ей значение
-	// SyntaxError: Missing initializer in const declaration
-	const name;
+//	// ERROR: Константу можно объявлять только присвоив ей значение
+//	// SyntaxError: Missing initializer in const declaration
+//	const name;
 		
-	return age;
-}
+//	return age;
+//}
 
-function constChange() {
-	// ОК: Стандартное объявление константы
-	const age = 18;
+//function constChange() {
+//	// ОК: Стандартное объявление константы
+//	const age = 18;
 
-	// ERROR: Значние константы нельзя изменять
-	age = 21;
+//	// ERROR: Значние константы нельзя изменять
+//	age = 21;
 
-	return age;
-}
+//	return age;
+//}
 
 function constInitScope(condition) {
 
@@ -54,7 +55,7 @@ http.createServer(function (req, res) {
 	var result =
 		"<h2>Первый урок: Объявление и место положение переменных</h2>" +
 		"<ul>" +
-		"<li>constDeclare = " + constDeclare() + "</li>" +
+		"<li>constInitScope = " + constInitScope(false) + "</li>" +
 		"</ul>";
 
 	res.end(result);

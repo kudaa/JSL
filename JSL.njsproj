@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>38e6c8a8-e6b6-49a1-b754-6b8af502a83e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>base.js</StartupFile>
+    <StartupFile>Lesson_01\part_04.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

@@ -55,8 +55,7 @@ http.createServer(function (req, res) {
 	var result =
 		"<h2>Первый урок: Объявление и местоположение переменных</h2>" +
 		"<ul>" +
-		"<li>getValueQ(false) = " + getValueQ(true) + "</li>" +
-		"<li>getValueA(false) = " + getValueA(true) + "</li>" +
+		"<li>getValueError() = " + getValueError() + "</li>" +
 		"</ul>";
 
 	res.end(result);
